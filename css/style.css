@@ -1,0 +1,78 @@
+:root {
+    --bg-color: rgba(30, 30, 30, 0.7);
+    --txt-color: white;
+    --link-color: steelblue;
+    --link-hover: turquoise;
+}
+
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+    background-color: var(--bg-color);
+    text-align: center;
+    color: var(--txt-color);
+    padding: 5px;
+}
+
+header nav {
+    display: inline-flex;
+    gap: 5rem;
+    font-size: 2rem;
+}
+
+header a, footer a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+header a:hover, footer a:hover {
+    animation: colorRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+header h1 {
+    animation: lightUp 1s infinite;
+}
+
+main {
+
+}
+
+footer {
+    background-color: var(--bg-color);
+    text-align: center;
+    color: var(--txt-color);
+    text-decoration: none;
+}
+
+@keyframes colorRotate {
+    from {
+      color: var(--link-color);
+    }
+    25% {
+        color: #00ffb3;
+    }
+    50% {
+      color: #d0ff00;
+    }
+    75% {
+      color: #ff2600;
+    }
+    100% {
+      color: #be34f5;
+    }
+}
+
+@keyframes lightUp {
+    50% {
+        text-shadow: 0px 0px 5px var(--txt-color);
+    }
+}
