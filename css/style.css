@@ -5,13 +5,17 @@
     --link-hover: turquoise;
 }
 
+::selection {
+    background: none;
+    color:cyan;
+}
+
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    width: 100vw;
-    height: 100vh;
     background-image: url(../img/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 
 header {
@@ -19,6 +23,11 @@ header {
     text-align: center;
     color: var(--txt-color);
     padding: 5px;
+    height: 150px;
+}
+
+header img {
+    animation: scaleX 2s infinite;
 }
 
 header nav {
@@ -30,20 +39,22 @@ header nav {
 header a, footer a {
     text-decoration: none;
     color: var(--link-color);
+    padding: 5px;
 }
 
-header a:hover, footer a:hover {
-    animation: colorRotate;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-header h1 {
+h1 {
     animation: lightUp 1s infinite;
+    font-size: 2.5rem;
 }
 
 main {
-    
+    margin: 2rem 0 2rem 0;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
+
+hr {
+    color: var(--txt-color);
 }
 
 footer {
@@ -51,6 +62,32 @@ footer {
     text-align: center;
     color: var(--txt-color);
     text-decoration: none;
+}
+
+header a:hover {
+    animation: colorRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    transform: scale(1.25);
+    text-shadow: 0px 0px 5px currentColor;
+}
+
+footer a:hover {
+    animation: colorRotate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.bemutat {
+    padding: 1rem;
+}
+
+.bemutat h1 {
+    text-align: center;
+}
+
+.bemutat p {
+    text-indent: 1rem;
 }
 
 @keyframes colorRotate {
@@ -75,4 +112,18 @@ footer {
     50% {
         text-shadow: 0px 0px 5px var(--txt-color);
     }
+}
+
+@keyframes scaleX {
+    from {
+        transform: scaleX(1);
+    }
+    50% {
+        transform: scaleX(2);
+    }
+    
+    100% {
+        transform: scaleX(1);
+    }
+
 }
