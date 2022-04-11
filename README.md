@@ -1,2 +1,2 @@
 # internet-ceg
-internet páros munak
+https://vighakos.github.io/internet-ceg/
