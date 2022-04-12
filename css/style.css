@@ -99,7 +99,7 @@ footer a:hover {
 }
 
 .asd {
-    animation: fadein 60s;
+    animation: fadein 5s;
     background-image: url(../img/marijo.png);
 }
 
@@ -217,13 +217,15 @@ main img {
 }
 
 @keyframes fadein {
-    0% {
+    from {
         opacity: 0%;
     }
-
-    100% {
+    
+    to {
         opacity: 100%;
     }
+
+
 }
 
 @media screen and (min-width: 670px) {
