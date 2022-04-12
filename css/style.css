@@ -87,6 +87,7 @@ footer a:hover {
 
 .content {
     padding: 1rem;
+    margin: 0;
 }
 
 .content h1 {
@@ -97,10 +98,16 @@ footer a:hover {
     text-indent: 1rem;
 }
 
+.asd {
+    animation: fadein 60s;
+    background-image: url(../img/marijo.png);
+}
+
 main img {
     max-width: 500px;
     width: 70%;
 }
+
 
 #gyorsnet:hover {
     animation: porog 1s infinite;
