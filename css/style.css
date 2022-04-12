@@ -85,16 +85,25 @@ footer a:hover {
     animation-iteration-count: infinite;
 }
 
-.bemutat {
+.content {
     padding: 1rem;
 }
 
-.bemutat h1 {
+.content h1 {
     text-align: center;
 }
 
-.bemutat p {
+.content p {
     text-indent: 1rem;
+}
+
+#gyorsnet {
+    max-width: 500px;
+    width: 70%;
+}
+
+#gyorsnet:hover {
+    animation: porog 1s infinite;
 }
 
 @keyframes colorRotate {
@@ -134,6 +143,18 @@ footer a:hover {
     }
 
 }
+
+@keyframes porog {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(3600deg);
+    }
+}
+
+
 
 @media screen and (min-width: 670px) {
     header nav {
