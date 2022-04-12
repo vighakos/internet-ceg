@@ -97,13 +97,25 @@ footer a:hover {
     text-indent: 1rem;
 }
 
-#gyorsnet {
+main img {
     max-width: 500px;
     width: 70%;
 }
 
 #gyorsnet:hover {
     animation: porog 1s infinite;
+}
+
+#bajatv {
+    animation: pulse 0.1s infinite;
+}
+
+#netflix:hover {
+    animation: megno 10s infinite;
+}
+
+#vasarlo {
+    animation: tukroz 1s infinite;
 }
 
 @keyframes colorRotate {
@@ -166,6 +178,44 @@ footer a:hover {
     100% {
         transform: scale(0.95);
         box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes megno {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(10);
+    }
+     
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes tukroz {
+    0% {
+        transform: scaleX(-1);
+    }
+
+    50% {
+        transform: scaleX(1);
+    }
+     
+    100% {
+        transform: scaleX(-1);
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+
+    100% {
+        opacity: 100%;
     }
 }
 
